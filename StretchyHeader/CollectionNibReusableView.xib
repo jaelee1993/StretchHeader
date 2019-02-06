@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="" id="U6b-Vx-4bR" customClass="CollectionNibReusableView" customModule="StretchyHeader" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="378" height="381"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Kq-Wo-CMt">
+                    <rect key="frame" x="0.0" y="0.0" width="378" height="381"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Hawaii" translatesAutoresizingMaskIntoConstraints="NO" id="gnH-xb-3vB">
+                            <rect key="frame" x="0.0" y="0.0" width="378" height="381"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Hawaii" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zyX-Or-t9u">
+                            <rect key="frame" x="20" y="261" width="200" height="100"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="200" id="gjn-Zs-mI0"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="42"/>
+                            <color key="textColor" red="0.92941176469999998" green="0.94117647059999998" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="gnH-xb-3vB" firstAttribute="leading" secondItem="3Kq-Wo-CMt" secondAttribute="leading" id="8Tb-rT-Ppx"/>
+                        <constraint firstItem="gnH-xb-3vB" firstAttribute="top" secondItem="3Kq-Wo-CMt" secondAttribute="top" id="Ack-ND-vwN"/>
+                        <constraint firstItem="zyX-Or-t9u" firstAttribute="leading" secondItem="3Kq-Wo-CMt" secondAttribute="leading" constant="20" id="iZx-Iw-wts"/>
+                        <constraint firstAttribute="bottom" secondItem="zyX-Or-t9u" secondAttribute="bottom" constant="20" id="iaN-I8-Skk"/>
+                        <constraint firstAttribute="bottom" secondItem="gnH-xb-3vB" secondAttribute="bottom" id="rGp-lR-24W"/>
+                        <constraint firstAttribute="trailing" secondItem="gnH-xb-3vB" secondAttribute="trailing" id="uc8-gn-8OT"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="3Kq-Wo-CMt" firstAttribute="bottom" secondItem="VXr-Tz-HHm" secondAttribute="bottom" id="MeN-yV-1S7"/>
+                <constraint firstItem="3Kq-Wo-CMt" firstAttribute="trailing" secondItem="VXr-Tz-HHm" secondAttribute="trailing" id="Yen-7h-WWC"/>
+                <constraint firstItem="3Kq-Wo-CMt" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="gni-ko-h34"/>
+                <constraint firstItem="3Kq-Wo-CMt" firstAttribute="leading" secondItem="VXr-Tz-HHm" secondAttribute="leading" id="x4M-jB-1Fi"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="VXr-Tz-HHm"/>
+            <point key="canvasLocation" x="184" y="302.6986506746627"/>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <image name="Hawaii" width="3047" height="3707"/>
+    </resources>
+</document>
